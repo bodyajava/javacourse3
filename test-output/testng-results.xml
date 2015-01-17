@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3693" started-at="2015-01-17T17:22:20Z" finished-at="2015-01-17T17:22:24Z">
+  <suite name="Default suite" duration-ms="3741" started-at="2015-01-17T19:45:44Z" finished-at="2015-01-17T19:45:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3693" started-at="2015-01-17T17:22:20Z" finished-at="2015-01-17T17:22:24Z">
+    <test name="Default test" duration-ms="3741" started-at="2015-01-17T19:45:44Z" finished-at="2015-01-17T19:45:48Z">
       <class name="automation.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:automation.LoginTest@9d7fbfb]" name="init" is-config="true" duration-ms="3027" started-at="2015-01-17T19:22:20Z" finished-at="2015-01-17T19:22:23Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:automation.LoginTest@39e57e8f]" name="init" is-config="true" duration-ms="3036" started-at="2015-01-17T21:45:44Z" finished-at="2015-01-17T21:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testUntitled()[pri:0, instance:automation.LoginTest@9d7fbfb]" name="testUntitled" duration-ms="655" started-at="2015-01-17T19:22:23Z" finished-at="2015-01-17T19:22:24Z">
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:automation.LoginTest@39e57e8f]" name="testUntitled" duration-ms="694" started-at="2015-01-17T21:45:47Z" finished-at="2015-01-17T21:45:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUntitled -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.LoginTest@9d7fbfb]" name="tearDown" is-config="true" duration-ms="71" started-at="2015-01-17T19:22:24Z" finished-at="2015-01-17T19:22:24Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.LoginTest@39e57e8f]" name="tearDown" is-config="true" duration-ms="79" started-at="2015-01-17T21:45:48Z" finished-at="2015-01-17T21:45:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
