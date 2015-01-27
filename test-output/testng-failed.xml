@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="automation.LoginTest">
+      <class name="automation.AddMovie">
         <methods>
-          <include name="testUntitled"/>
+          <include name="addValidMovie"/>
           <include name="init"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- automation.LoginTest -->
+      </class> <!-- automation.AddMovie -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

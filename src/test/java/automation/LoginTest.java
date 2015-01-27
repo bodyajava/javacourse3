@@ -15,7 +15,7 @@ public class LoginTest extends automation.pages.TestBase {
   private StringBuffer verificationErrors = new StringBuffer();
 
   @Test
-  public void testUntitled() throws Exception {
+  public void login() throws Exception {
     driver.get(baseUrl + "php4dvd/");
     driver.findElement(By.id("username")).clear();
     driver.findElement(By.id("username")).sendKeys("admin");
