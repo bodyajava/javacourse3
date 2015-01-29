@@ -1,3 +1,6 @@
+test-output
+target
+
 *.class
 
 # Mobile Tools for Java (J2ME)
