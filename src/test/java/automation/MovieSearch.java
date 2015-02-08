@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 
-public class MovieSearch extends automation.pages.TestBase {
+public class MovieSearch extends automation.base.TestBase {
 	private String movie;
 	private String movie1;
 	private String site_movie;

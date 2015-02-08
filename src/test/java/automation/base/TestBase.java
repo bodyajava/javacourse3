@@ -1,23 +1,12 @@
-package automation.pages;
+package automation.base;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.Augmenter;
-import org.openqa.selenium.remote.ScreenshotException;
-import org.testng.ITestResult;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-
-import automation.util.PropertyLoader;
 import automation.util.Browser;
+import automation.util.PropertyLoader;
 import automation.webdriver.WebDriverFactory;
 
 /*

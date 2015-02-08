@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="automation.MovieSearch">
+      <class name="automation.MovieRemove_Model">
         <methods>
-          <include name="SearchInvalidMovie"/>
+          <include name="testRemoveMovie"/>
           <include name="init"/>
-          <include name="tearDown"/>
+          <include name="stop"/>
+          <include name="mayBeLogout"/>
         </methods>
-      </class> <!-- automation.MovieSearch -->
+      </class> <!-- automation.MovieRemove_Model -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.*;
 
-public class DeleteMovieDescription extends automation.pages.TestBase {
+public class DeleteMovieDescription extends automation.base.TestBase {
 	
 	@Test
 	public void DeleteDescription() throws Exception{

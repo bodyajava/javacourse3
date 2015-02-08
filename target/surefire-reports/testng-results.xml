@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="5910" started-at="2015-01-28T20:09:56Z" finished-at="2015-01-28T20:10:01Z">
+  <suite name="Tests" duration-ms="5810" started-at="2015-01-29T17:17:29Z" finished-at="2015-01-29T17:17:35Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="5910" started-at="2015-01-28T20:09:56Z" finished-at="2015-01-28T20:10:01Z">
+    <test name="Test1" duration-ms="5810" started-at="2015-01-29T17:17:29Z" finished-at="2015-01-29T17:17:35Z">
       <class name="automation.AddMovie">
-        <test-method status="PASS" signature="init()[pri:0, instance:automation.AddMovie@485fcf29]" name="init" is-config="true" duration-ms="3533" started-at="2015-01-28T22:09:56Z" finished-at="2015-01-28T22:09:59Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:automation.AddMovie@6da28362]" name="init" is-config="true" duration-ms="3430" started-at="2015-01-29T19:17:29Z" finished-at="2015-01-29T19:17:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="addInvalidMovie()[pri:0, instance:automation.AddMovie@485fcf29]" name="addInvalidMovie" duration-ms="1034" started-at="2015-01-28T22:09:59Z" finished-at="2015-01-28T22:10:00Z">
+        <test-method status="PASS" signature="addInvalidMovie()[pri:0, instance:automation.AddMovie@6da28362]" name="addInvalidMovie" duration-ms="1046" started-at="2015-01-29T19:17:32Z" finished-at="2015-01-29T19:17:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addInvalidMovie -->
-        <test-method status="PASS" signature="addValidMovie()[pri:0, instance:automation.AddMovie@485fcf29]" name="addValidMovie" duration-ms="1329" started-at="2015-01-28T22:10:00Z" finished-at="2015-01-28T22:10:01Z">
+        <test-method status="PASS" signature="addValidMovie()[pri:0, instance:automation.AddMovie@6da28362]" name="addValidMovie" duration-ms="1318" started-at="2015-01-29T19:17:33Z" finished-at="2015-01-29T19:17:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addValidMovie -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.AddMovie@485fcf29]" name="tearDown" is-config="true" duration-ms="89" started-at="2015-01-28T22:10:01Z" finished-at="2015-01-28T22:10:02Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:automation.AddMovie@6da28362]" name="tearDown" is-config="true" duration-ms="89" started-at="2015-01-29T19:17:35Z" finished-at="2015-01-29T19:17:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

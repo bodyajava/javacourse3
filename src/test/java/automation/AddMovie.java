@@ -5,7 +5,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.testng.annotations.*;
 import static org.testng.Assert.assertEquals;
 
-public class AddMovie extends automation.pages.TestBase {
+public class AddMovie extends automation.base.TestBase {
 	private String title;
 	private String year;
 	private String plot;

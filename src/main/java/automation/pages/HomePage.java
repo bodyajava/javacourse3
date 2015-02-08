@@ -11,7 +11,7 @@ import org.openqa.selenium.support.How;
  * 
  * @author Sebastiano Armeli-Battana
  */
-public class HomePage extends Page {
+public class HomePage extends InternalPage {
 
 	private final String H1_TAG = "h1";
 	
@@ -19,8 +19,8 @@ public class HomePage extends Page {
 	@CacheLookup
 	private WebElement h1Element;
 	
-	public HomePage(WebDriver webDriver) {
-		super(webDriver);
+	public HomePage(PageManager pages) {
+		super(pages);
 	}
 	
 	public String getH1() {
