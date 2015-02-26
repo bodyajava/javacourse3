@@ -11,6 +11,7 @@ public class PageManager {
 	public InternalPage internalPage;
 	public MovieAddNewPage movieAddNewPage;
 	public MovieProfilePage movieProfilePage;
+	public MailMainPage mailMainPage;
 	
 	public PageManager(WebDriver driver) {
 	    this.driver = driver;
@@ -18,6 +19,7 @@ public class PageManager {
 	    internalPage = initElements(new InternalPage(this));
 	    movieAddNewPage = initElements(new MovieAddNewPage(this));
 	    movieProfilePage = initElements(new MovieProfilePage(this));
+	    mailMainPage = initElements(new MailMainPage(this));
 	}
 	
 	private <T extends Page> T initElements(T page) {

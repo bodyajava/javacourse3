@@ -13,6 +13,8 @@ public class ApplicationManager {
 	private UserHelper userHelper;
 	private MovieHelper movieHelper;
 	private NavigationHelper navHelper;
+	private SearchHelper searchHelper;
+	private MailHelper mailHelper;
 	private WebDriver driver;
 	private String baseUrl;
 	
@@ -34,6 +36,7 @@ public class ApplicationManager {
 		userHelper = new UserHelper(this);
 		movieHelper = new MovieHelper(this);
 		navHelper = new NavigationHelper(this);
+		searchHelper = new SearchHelper(this);
 		
 		getNavigationHelper().openRelativeUrl("php4dvd/");
 	}
@@ -48,6 +51,14 @@ public class ApplicationManager {
 	
 	public NavigationHelper getNavigationHelper() {
 		return navHelper;
+	}
+	
+	public SearchHelper getSearchHelper() {
+		return searchHelper;
+	}
+	
+	public MailHelper getMailHelper() {
+		return mailHelper;
 	}
 	
 	protected WebDriver getWebDriver() {

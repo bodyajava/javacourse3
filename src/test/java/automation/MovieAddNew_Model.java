@@ -11,7 +11,6 @@ public class MovieAddNew_Model extends automation.base.TestBaseModel {
 		if (app.getUserHelper().isNotLoggedIn()) {
 			app.getUserHelper().loginAs(ADMIN);
 	    }
-	    
 	}
 	
 	@Test

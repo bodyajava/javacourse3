@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import automation.model.Movie;
 
 public class InternalPage extends AnyPage {
+	
 	public InternalPage(PageManager pages) {
 		super(pages);
 	}
