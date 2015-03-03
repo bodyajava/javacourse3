@@ -37,8 +37,10 @@ public class ApplicationManager {
 		movieHelper = new MovieHelper(this);
 		navHelper = new NavigationHelper(this);
 		searchHelper = new SearchHelper(this);
+		mailHelper = new MailHelper(this);
 		
-		getNavigationHelper().openRelativeUrl("php4dvd/");
+		getNavigationHelper().openMainPage();
+		//getNavigationHelper().openRelativeUrl("php4dvd/");
 	}
 	
 	public UserHelper getUserHelper() {

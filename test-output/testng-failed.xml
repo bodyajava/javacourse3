@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="automation.MovieRemove_Model">
+      <class name="automation.MailFoldersView">
         <methods>
-          <include name="testRemoveMovie"/>
           <include name="init"/>
-          <include name="stop"/>
-          <include name="mayBeLogout"/>
+          <include name="viewFolders"/>
         </methods>
-      </class> <!-- automation.MovieRemove_Model -->
+      </class> <!-- automation.MailFoldersView -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

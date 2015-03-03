@@ -7,7 +7,7 @@ public class MailFoldersView extends automation.base.TestBaseModel {
 	
 	@Test
 	public void viewFolders() {
-		app.getMailHelper().openMainpage();
+		app.getMailHelper().viewFolders();
 	}
 
 }

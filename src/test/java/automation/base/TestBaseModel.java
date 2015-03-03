@@ -16,7 +16,7 @@ public class TestBaseModel {
 		app = new ApplicationManager();
 	}
 	
-	@AfterSuite
+	//@AfterSuite
 	public void stop() {
 		app.stop();
 	}

@@ -7,12 +7,13 @@ public class MailHelper extends DriverBasedHelper {
 	}
 	
 	public void viewFolders() {
-		
-	}
-
-	public void openMainpage() {
-		pages.mailMainPage.ensurePageLoaded();
-		// TODO Auto-generated method stub
+		pages.mailPage.ensurePageLoaded();
+		pages.mailPage.openAjaxFolder().waitFolderOpened();
+		pages.mailPage.openAnnouncementsFolder().waitFolderOpened();
+		pages.mailPage.openAccessFolder().waitFolderOpened();
+		pages.mailPage.openSilverlightFolder().waitFolderOpened();
+		pages.mailPage.openWinFormsFolder().waitFolderOpened();
+		pages.mailPage.openWpfFolder().waitFolderOpened();
 		
 	}
 

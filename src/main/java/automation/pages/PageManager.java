@@ -11,7 +11,7 @@ public class PageManager {
 	public InternalPage internalPage;
 	public MovieAddNewPage movieAddNewPage;
 	public MovieProfilePage movieProfilePage;
-	public MailMainPage mailMainPage;
+	public MailPage mailPage;
 	
 	public PageManager(WebDriver driver) {
 	    this.driver = driver;
@@ -19,13 +19,18 @@ public class PageManager {
 	    internalPage = initElements(new InternalPage(this));
 	    movieAddNewPage = initElements(new MovieAddNewPage(this));
 	    movieProfilePage = initElements(new MovieProfilePage(this));
-	    mailMainPage = initElements(new MailMainPage(this));
+	    mailPage = initAjaxElements(new MailPage(this));
 	}
 	
 	private <T extends Page> T initElements(T page) {
 		//PageFactory.initElements(driver, page);
 	    //PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), page);
 	    PageFactory.initElements(new DisplayedElementLocatorFactory(driver, 10), page);
+	    return page;
+	}
+	
+	private <T extends Page> T initAjaxElements(T page) {
+	    PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), page);
 	    return page;
 	}
 	
