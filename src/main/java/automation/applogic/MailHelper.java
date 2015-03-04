@@ -8,12 +8,12 @@ public class MailHelper extends DriverBasedHelper {
 	
 	public void viewFolders() {
 		pages.mailPage.ensurePageLoaded();
-		pages.mailPage.openAjaxFolder().waitFolderOpened();
-		pages.mailPage.openAnnouncementsFolder().waitFolderOpened();
-		pages.mailPage.openAccessFolder().waitFolderOpened();
-		pages.mailPage.openSilverlightFolder().waitFolderOpened();
-		pages.mailPage.openWinFormsFolder().waitFolderOpened();
-		pages.mailPage.openWpfFolder().waitFolderOpened();
+		pages.mailPage.openAjaxFolder().waitAjaxFolderOpened();
+		pages.mailPage.openAnnouncementsFolder().waitAnnouncementsFolderOpened();
+		pages.mailPage.openAccessFolder().waitAccessFolderOpened();
+		pages.mailPage.openSilverlightFolder().waitSilverlightFolderOpened();
+		pages.mailPage.openWinFormsFolder().waitWinFormsFolderOpened();
+		pages.mailPage.openWpfFolder().waitWpfFolderOpened();
 		
 	}
 
