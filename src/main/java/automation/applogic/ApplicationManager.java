@@ -40,7 +40,7 @@ public class ApplicationManager {
 		mailHelper = new MailHelper(this);
 		
 		getNavigationHelper().openMainPage();
-		//getNavigationHelper().openRelativeUrl("php4dvd/");
+		getNavigationHelper().openRelativeUrl("php4dvd/"); // comment if use external link
 	}
 	
 	public UserHelper getUserHelper() {

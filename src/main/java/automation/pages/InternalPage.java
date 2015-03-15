@@ -19,6 +19,30 @@ public class InternalPage extends AnyPage {
 		return this;
 	}
 	
+	public InternalPage ensureResultsFound() {
+		super.ensurePageLoaded();
+		wait.until(presenceOfElementLocated(By.xpath("//*[contains(@id, 'results')]")));
+		return this;
+	}
+	
+	public InternalPage ensureMoviesAppear() {
+		super.ensurePageLoaded();
+		wait.until(presenceOfElementLocated(By.xpath("//*[contains(@class, 'movie_box')]")));
+		return this;
+	}
+	
+	public InternalPage ensureMoviesDissapear() {
+		super.ensurePageLoaded();
+		wait.until(invisibilityOfElementLocated(By.xpath("//*[contains(@class, 'movie_box')]")));
+		return this;
+	}
+	
+	public InternalPage ensureNoResultsTextFound() {
+		super.ensurePageLoaded();
+		wait.until(visibilityOfElementLocated(By.cssSelector("//*[contains(@class, 'content')]")));
+		return this;
+	}
+	
 	@FindBy(css = "nav a[href $= '?go=profile']")
 	private WebElement userProfileLink;
 	
@@ -34,9 +58,14 @@ public class InternalPage extends AnyPage {
 	@FindBy(xpath = ".//*[@id='q']")
 	private WebElement searchField;
 	
-	@FindBy(xpath = ".//a[1]/div/div[2]")
+	@FindBy(xpath = "//*[contains(@id, 'results')]")
+	private WebElement results;
+	
+	@FindBy(xpath = "//*[contains(@class, 'movie_box')]")
 	private WebElement movieBox;
 	
+	@FindBy(xpath = "//*[contains(@class, 'content')]")
+	private WebElement noResults;	
 	
 	public MovieAddNewPage clickAddMovieButton() {
 		addMovieButton.click();
@@ -49,10 +78,13 @@ public class InternalPage extends AnyPage {
 
 	public InternalPage searchForMovie(Movie movie) {
 		searchField.clear();
+		searchField.sendKeys(Keys.RETURN);
+		wait.until(presenceOfElementLocated(By.xpath("//*[contains(@id, 'results')]")));
+		
 		searchField.sendKeys(movie.getTitle());
 		searchField.sendKeys(Keys.RETURN);
-		//wait.until(presenceOfElementLocated(By.xpath(".//a[1]/div/div[2]")));
-		wait.until(presenceOfElementLocated(By.xpath(".//section/div[3]")));
+		wait.until(presenceOfElementLocated(By.xpath("//*[contains(@id, 'results')]")));
+		
 		return this;
 	}
 

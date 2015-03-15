@@ -1,5 +1,6 @@
 package automation.applogic;
 
+import org.openqa.selenium.By;
 import automation.model.Movie;
 
 public class SearchHelper extends DriverBasedHelper {
@@ -12,18 +13,22 @@ public class SearchHelper extends DriverBasedHelper {
 	}
 
 	public void searchForMovie(Movie movie) {
-		// TODO Auto-generated method stub
-		
+		pages.internalPage.ensurePageLoaded();
+		pages.internalPage.searchForMovie(movie);		
 	}
 
 	public boolean isMovieFound(Movie movie) {
-		// TODO Auto-generated method stub
-		return false;
+		pages.internalPage.ensureResultsFound();
+		pages.internalPage.ensureMoviesAppear();
+		return driver.findElement(By.xpath("//*[contains(@title, '"+ movie.getTitle() + "')]")).isDisplayed()
+				&& ! driver.findElement(By.xpath("//*[contains(@class, 'content')]")).isDisplayed();
 	}
 
-	public boolean isMovieNotFound(Movie movie) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean isNoMovieFound() {
+		pages.internalPage.ensureResultsFound();
+		pages.internalPage.ensureMoviesDissapear();
+		//System.out.println(driver.findElement(By.xpath("//*[contains(@class, 'content')]")).getText());
+		return driver.findElement(By.xpath("//*[contains(@class, 'content')]")).getText().equals("No movies where found.");
 	}
 
 }

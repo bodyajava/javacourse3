@@ -15,7 +15,7 @@ public class MovieSearch_Model extends automation.base.TestBaseModel {
 	}
 	
 	@Test
-	public void searchMovieOK() throws Exception {
+	public void searchPresentMovie() throws Exception {
 		Movie movie = new Movie()
 			.setTitle("Wild Wild West");
 		app.getSearchHelper().searchForMovie(movie);
@@ -23,11 +23,11 @@ public class MovieSearch_Model extends automation.base.TestBaseModel {
 	}
 	
 	@Test
-	public void searchMovieNotOK() throws Exception {
+	public void searchAbsentMovie() throws Exception {
 		Movie movie = new Movie()
 			.setTitle("Costner");
 		app.getSearchHelper().searchForMovie(movie);
-		assertTrue(app.getSearchHelper().isMovieNotFound(movie));
+		assertTrue(app.getSearchHelper().isNoMovieFound());
 	}
 
 }
