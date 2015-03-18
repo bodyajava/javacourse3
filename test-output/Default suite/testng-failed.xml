@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="automation.MovieSearch_Model">
+      <class name="automation.ProxyServerTest">
         <methods>
-          <include name="searchMovieOK"/>
-          <include name="init"/>
-          <include name="mayBeLogout"/>
-          <include name="stop"/>
+          <include name="testMobProxyServer"/>
         </methods>
-      </class> <!-- automation.MovieSearch_Model -->
+      </class> <!-- automation.ProxyServerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

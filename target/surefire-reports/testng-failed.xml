@@ -5,13 +5,14 @@
   <test name="Test1(failed)">
     <parameter name="path" value="/"/>
     <classes>
-      <class name="automation.LoginTest">
+      <class name="automation.AddMovie">
         <methods>
-          <include name="login"/>
-          <include name="init"/>
           <include name="tearDown"/>
+          <include name="init"/>
+          <include name="addValidMovie"/>
+          <include name="addInvalidMovie"/>
         </methods>
-      </class> <!-- automation.LoginTest -->
+      </class> <!-- automation.AddMovie -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Tests] -->
